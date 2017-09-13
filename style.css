@@ -29,7 +29,8 @@
     background-image: url("./img/fulllogo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: stretch;
+    background-size: fill;
+    width: 100%;
 }
 .get-started-box{
     display: flex;
@@ -53,7 +54,7 @@
 }
 .nav-text{
     font-family: 'Aleo';
-    color: #666666;
+    color: white;
     padding-left: 2px;
     font-weight: 100;
     font-size: 16px;

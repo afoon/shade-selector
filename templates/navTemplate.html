@@ -1,19 +1,20 @@
-<div class="navbar-fixed">
-    <nav>
+<div class="navbar-fixed z-depth-0">
+    <nav role="navigation">
       <div class="nav-wrapper aleo-text light-blue lighten-3">
-        <a href="#!" class="brand-logo"><img src="../img/logoimg.ico" style="height: 56px"><span class="nav-text">that's my</span> <span class="cursive">Shade!</span></a>
-        <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <span class="nav-text">that's my</span> <span class="cursive">Shade!</span>
+        <a href="#!" class="brand-logo"><img src="../img/logoimg.ico" style="height: 56px"></a>
         <ul class="right hide-on-med-and-down">
           <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="shade">Shades</a></li>
+          <li><a ui-sref="shades">Shades</a></li>
           <li><a ui-sref="about">About</a></li>
         </ul>
-        <ul class="side-nav" id="mobile">
+        <ul class="side-nav" id="slide-out">
           <li><a href="sass.html">Sass</a></li>
           <li><a href="badges.html">Components</a></li>
           <li><a href="collapsible.html">Javascript</a></li>
           <li><a href="mobile.html">Mobile</a></li>
         </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
