@@ -17,6 +17,7 @@ if (typeof jQuery === 'undefined') {
     jQuery = $;
   }
 }
+
 ; /*
   * jQuery Easing v1.4.0 - http://gsgd.co.uk/sandbox/jquery/easing/
   * Open source under the BSD License.
@@ -10018,4 +10019,5 @@ if (Vel) {
 
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
+  
 })(jQuery);

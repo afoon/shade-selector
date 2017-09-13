@@ -1,0 +1,36 @@
+.main-view{
+    background: #81D4FA;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    vertical-align: center;
+}
+.full-logo{
+    height: 500px;
+    background-image: url("./img/fulllogo.png");
+    background-repeat: no-repeat;
+    background-position: fill;
+}
+.get-started-box{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    align-content: center;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.landing{
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+}
+.landing:hover{
+    background: white;
+    color:#81D4FA;
+}
+.nav-text{
+    font: 'Aleo'
+}
