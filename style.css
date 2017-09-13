@@ -1,15 +1,35 @@
+@font-face {
+    font-family: Aleo;
+    src: url('./fonts/Aleo-Light.otf');
+}
+@font-face {
+    font-family: Playlist;
+    src: url('./fonts/Playlist Script.otf');
+}
 .main-view{
     background: #81D4FA;
     height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
     vertical-align: center;
+    overflow: scroll;
+
+    
 }
+
+.plswork{
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+
 .full-logo{
     height: 500px;
     background-image: url("./img/fulllogo.png");
     background-repeat: no-repeat;
-    background-position: fill;
+    background-position: center;
+    background-size: stretch;
 }
 .get-started-box{
     display: flex;
@@ -32,5 +52,67 @@
     color:#81D4FA;
 }
 .nav-text{
-    font: 'Aleo'
+    font-family: 'Aleo';
+    color: #666666;
+    padding-left: 2px;
+    font-weight: 100;
+    font-size: 16px;
+    vertical-align: center;
+}
+.cursive{
+    font-family: 'Playlist';
+   color: #666666;
+}
+
+.product{
+    margin: 5px;
+    width: 400px;
+    display: inline-block;
+    color: #666666;
+}
+.product-name{
+    color: #666666;
+}
+.title-text{
+    font-family: 'Aleo';
+    color: #666666;
+    padding-left: 2px;
+    font-weight: 100;
+}
+.shade-box{
+    height: 500px;
+    border: 2px solid #666666;
+    width: 250px;
+    margin: 5px;
+    display: inline-block;
+}
+.fair{
+    background-color: #F4CDA6
+}
+.medium{
+    background-color: #E5BE85
+}
+.warm{
+    background-color: #D89352
+}
+.tan{
+    background-color: #906133
+}
+.dark{
+    background-color: #60391A
+}
+.brand-logo{
+    vertical-align: center;
+}
+.aleo-text{
+    font-family: 'Aleo';
+    padding-left: 10px;
+    padding-right: 50px;
+}
+.landing2{
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
 }

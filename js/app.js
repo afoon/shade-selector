@@ -9,12 +9,17 @@ angular.module('shadeApp',['ui.router']).config(function ($stateProvider, $urlRo
             .state('shades', {
                 url: '/shades',
                 templateUrl: './views/shades.html',
-                controller: 'shadeCtrl'
+                controller: 'mainCtrl'
             })
             .state('about', {
                 url: '/about',
                 templateUrl: './views/about.html',
                 controller: 'aboutCtrl'
+            })
+            .state('results', {
+                url: '/results',
+                templateUrl: './views/results.html',
+                controller: 'mainCtrl'
             });
     
         $urlRouterProvider

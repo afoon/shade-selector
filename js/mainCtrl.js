@@ -12,7 +12,7 @@ $scope.getMakeup = function(shade){
     })
     
 } 
-$scope.getMakeup("dark");
+$scope.getMakeup("fair");
 })
 
 
