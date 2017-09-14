@@ -41,8 +41,12 @@
     background-size: fill;
     width: auto;
 }
+.full-logo-mobile{
+    width: 100%;
+}
 .get-started-box{
     display: flex;
+    flex-direction: row;
     font-size: 20px;
     color: white;
     align-content: center;
@@ -50,7 +54,17 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    float: right;
+}
+.get-started-mobile{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
 }
 .about-box{
     display: flex;
@@ -104,11 +118,28 @@
     font-weight: 100;
 }
 .shade-box{
-    height: 400px;
+    height: 350px;
     border: 2px solid #666666;
-    width: 75px;
+    width: 60px;
     margin: 5px;
     display: inline-block;
+}
+@media (max-width:700px){
+    .shade-box{
+        height: 100px;
+    }
+    .desktop-friendly{
+        display:none;
+    }
+}
+
+@media (min-width:700px){
+    .mobile-friendly{
+        display: none;
+    }
+    .sideNav{
+        display: inline-block;
+    }
 }
 .fair{
     background-color: #FDD0AF

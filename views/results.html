@@ -1,8 +1,15 @@
-<h1 class="title-text">
+<div class="desktop-friendly"><h1 class="title-text">
     {{makeup.length}} foundations in your <span class="cursive">Shade</span>
     <a ui-sref="shades"><span class="landing2">Change Shade </span>
 </a>
 </h1>
+</div>
+<div class="mobile-friendly"><h4 class="title-text">
+        {{makeup.length}} foundations in your <span class="cursive">Shade</span>
+        <a ui-sref="shades"><br><br><span class="landing2">Change Shade </span>
+    </a>
+</h4>
+    </div>
 <div class="plswork">
 <div  class="card horizontal product" ng-repeat="product in makeup">
     <div class="card-image product-name">
