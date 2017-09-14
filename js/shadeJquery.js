@@ -1,7 +1,11 @@
-(function($){
-  $(function(){
+// (function($){
+//   $(function(){
 
-    $('.button-collapse').sideNav('show');
+//  $('.button-collapse').sideNav();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+//   }); // end of document ready
+// })(jQuery); // end of jQuery name space
+$( document ).ready(function(){
+
+  $(".button-collapse").sideNav();
+})

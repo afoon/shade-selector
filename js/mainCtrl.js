@@ -1,18 +1,17 @@
 angular.module('shadeApp').controller('mainCtrl', function($scope,mainService){
 $scope.test = "Issa Test";
 $scope.getMakeup = function(shade){
+    console.log(shade)
     mainService.getMakeup().then(
         function(response){
-       $scope.makeup = response.data.filter(function(cur){
-         return cur.product_colors.filter(function(hex){
-            return hexRange(shade, hex.hex_value)
+            $scope.makeup = response.data.filter(function(cur){
+                cur.product_colors.filter(function(hex){
+                    return hexRange(shade, hex.hex_value)
          }).length;
        })
-       console.log($scope.makeup)
     })
-    
 } 
-$scope.getMakeup("fair");
+// $scope.getMakeup()
 })
 
 

@@ -14,7 +14,7 @@ angular.module('shadeApp',['ui.router']).config(function ($stateProvider, $urlRo
             .state('about', {
                 url: '/about',
                 templateUrl: './views/about.html',
-                controller: 'aboutCtrl'
+                controller: 'mainCtrl'
             })
             .state('results', {
                 url: '/results',

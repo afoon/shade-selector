@@ -41,6 +41,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    float: right;
 }
 .landing{
     border: 2px solid white;
@@ -81,26 +82,41 @@
     font-weight: 100;
 }
 .shade-box{
-    height: 500px;
+    height: 400px;
     border: 2px solid #666666;
-    width: 200px;
+    width: 100px;
     margin: 5px;
     display: inline-block;
 }
 .fair{
-    background-color: #F4CDA6
+    background-color: #FDD0AF
 }
 .medium{
-    background-color: #E5BE85
+    background-color: #F0C895
+}
+.fair2{
+    background-color: #F1C7A1
+}
+.medium2{
+    background-color: #DBAA7F
 }
 .warm{
-    background-color: #D89352
+    background-color: #C6895A
+}
+.warm2{
+    background-color: #B86D45
 }
 .tan{
-    background-color: #906133
+    background-color: #A36431
+}
+.tan2{
+    background-color: #A16131
 }
 .dark{
-    background-color: #60391A
+    background-color: #78462B
+}
+.dark2{
+    background-color: #5F371D
 }
 .brand-logo{
     vertical-align: center;
