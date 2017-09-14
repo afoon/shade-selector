@@ -1,11 +1,12 @@
-angular.module('shadeApp').controller('mainCtrl', function($scope,mainService){
+angular.module('shadeApp').controller('mainCtrl', function($scope,mainService, $stateParams){
 $scope.test = "Issa Test";
-$scope.getMakeup = function(shade){
+var type = $stateParams.type;
+$scope.getMakeup = function(type){
     mainService.getMakeup().then(
         function(response){
             $scope.makeup = response.data.filter(function(cur){
                 return cur.product_colors.filter(function(hex){
-                    return hexRange(shade, hex.hex_value)
+                    return hexRange(type, hex.hex_value)
          }).length;
        })
        console.log($scope.makeup);

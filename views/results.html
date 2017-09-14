@@ -1,5 +1,5 @@
 <h1 class="title-text">
-    foundations in your <span class="cursive">Shade</span>
+    {{makeup.length}} foundations in your <span class="cursive">Shade</span>
     <a ui-sref="shades"><span class="landing2">Change Shade </span>
 </a>
 </h1>
@@ -8,9 +8,10 @@
     <div class="card-image product-name">
         <img ng-src="{{product.image_link}}">
     </div>
-    <div class="card-content">
+    <div class="card-content aleo-text">
         <h5>{{product.name}}</h5>
-        Brand:{{product.brand}}<br>
+        Brand: {{product.brand}}<br>
+        Type: {{product.category}} <br>
         Price: ${{product.price}}<br>
     </div>
 </div>
