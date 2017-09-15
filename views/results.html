@@ -20,7 +20,9 @@
         Brand: {{product.brand}}<br>
         Type: {{product.category}} <br>
         Price: ${{product.price}}<br>
-        <span><a class="activator btn-floating fab waves-effect waves-light grey" style="float: right"><i class="material-icons">add</i>"</a></span>
+       <hr>
+       <div class="shadeSwatch" style="background-color: {{color.hex_value}}" ng-repeat="color in product.product_colors"></div>
+        <span><a class="activator btn-floating fab waves-effect waves-light grey darken-1" style="float: right"><i class="material-icons">add</i>"</a></span>
     </div>
     <div class="card-reveal aleo-text">
         <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
@@ -28,3 +30,5 @@
       </div>
 </div>
 </div>
+
+<!-- <div ng-repeat= "color in makeup" style="background-color:{{hex.product_colors.hex_value}}"></div> -->

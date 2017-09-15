@@ -196,3 +196,14 @@
 .background-blue{
     background-color: #81D4FA;
 }
+.shadeSwatch{
+    width: 25px;
+    height: 10px;
+    border: 1px solid #666666;
+    display: inline-block;
+}
+.easter-on:hover{
+    display: none;
+}
+
+

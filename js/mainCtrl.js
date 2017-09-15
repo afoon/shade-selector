@@ -4,16 +4,24 @@ var type = $stateParams.type;
 $scope.getMakeup = function(type){
     mainService.getMakeup().then(
         function(response){
+            // console.log(response)
             $scope.makeup = response.data.filter(function(cur){
                 return cur.product_colors.filter(function(hex){
                     return hexRange(type, hex.hex_value)
-         }).length;
-       })
-       console.log($scope.makeup);
+                }).length;
+            });
+            console.log($scope.makeup)
     })
-} 
+}
 
-})
+});
+
+// var productColors = $scope.getMakeup.filter(function(cur){
+//     return cur.product_colors.filter(function(color){
+//         return color.hex_value
+//     })
+// })
+// console.log($scope.productColors)
 
 
 function hexBrightness(hex) {
