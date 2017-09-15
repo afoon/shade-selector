@@ -1,4 +1,13 @@
-<div class="desktop-friendly center"><h1 class="title-text">
+<div class="row">
+<div class="desktop-friendly col s2">
+    <input class="form-control" placeholder="Search by Brand" ng-model="searchFilter.brand">
+    <input class="form-control" placeholder="Search by Type" ng-model="searchFilter.category">
+    </div>
+<div class="mobile-friendly">
+            <input class="form-control" placeholder="Search by Brand" ng-model="searchFilter.brand">
+            <input class="form-control" placeholder="Search by Type" ng-model="searchFilter.category">
+            </div>
+<div class="desktop-friendly center s10"><h1 class="title-text">
     {{makeup.length}} foundations in your <span class="cursive">Shade</span>
     <a ui-sref="shades"><span class="landing2">Change Shade </span>
 </a>
@@ -10,8 +19,8 @@
     </a>
 </h4>
     </div>
-<div class="plswork center">
-<div  class="card horizontal product" ng-repeat="product in makeup">
+<div class="plswork scroll">
+<div  class="card horizontal product" ng-repeat="product in makeup | filter: searchFilter | orderBy: sortDirection + sortProp">
     <div class="card-image product-name">
         <img ng-src="{{product.image_link}}">
     </div>
@@ -28,6 +37,7 @@
         <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
         <p>{{product.description}}</p>
       </div>
+</div>
 </div>
 </div>
 
