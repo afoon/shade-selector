@@ -64,7 +64,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 200px;
 }
 .about-box{
     display: flex;
@@ -124,16 +123,16 @@
     margin: 5px;
     display: inline-block;
 }
-@media (max-width:700px){
+@media (max-width:970px){
     .shade-box{
-        height: 100px;
+        height: 150px;
     }
     .desktop-friendly{
         display:none;
     }
 }
 
-@media (min-width:700px){
+@media (min-width:970px){
     .mobile-friendly{
         display: none;
     }
